@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Nexus 7</title>
+	<style type="text/css">
+		* {
+			margin: 0;padding: 0; box-sizing: border-box;
+		}
+		body {
+			background: #eee;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			min-height: 100vh;
+		}
+		/*iframe {
+			box-shadow: 0px 0px 40px rgba(0,0,0,0.05), 0px 0px 10px rgba(0,0,0,0.1), 0px 1px 1px rgba(0,0,0,0.05);
+		}*/
+		h1 {
+			position: absolute;
+			z-index: 0;
+			font-family: sans-serif;
+			font-weight: 100;
+			opacity: 0.2;
+		}
+		.nexus7 {
+			width: 1287px;
+			height: 810px;
+			background: url('nexus7.png') no-repeat center center;
+			transform: scale(.8889);
+			margin: 20px;
+		}
+		.device {
+			width: 960px;
+			height: 600px;
+			overflow: hidden;
+			padding-left: 151px;
+			margin-top: 106px;
+			box-sizing: content-box;
+			display: inline-block;
+		}
+		.bar {
+			width: 100%;
+			height: 25px;
+			background: url('bar.png') no-repeat right top / auto 25px;
+		}
+		.nexus7 iframe {
+			
+		} 
+	</style>
+</head>
+<body>
+	<h1>960 x 600</h1> <!-- width + 17px (scrollbar) /// height - 25px (menu bar) -->
+	<div class="container">
+		<div class="content">
+			
+			<div class="nexus7">
+				<div class="device">
+					<div class="bar"></div>
+					<iframe src="http://localhost/ccp/evento-super-importante/" frameborder="0" width="977" height="575"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

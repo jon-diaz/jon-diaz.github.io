@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>P ipad</title>
+	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+	<style type="text/css">
+		* {
+			margin: 0;padding: 0; box-sizing: border-box;
+		}
+		html, body {
+scrollbar-face-color: #D9DEE1;
+scrollbar-highlight-color: #D9DEE1;
+scrollbar-shadow-color: #D9DEE1;
+scrollbar-3dlight-color: #D9DEE1;
+scrollbar-arrow-color: #D9DEE1;
+scrollbar-track-color: #D9DEE1;
+scrollbar-darkshadow-color: #D9DEE1;
+}
+		body {
+			background: #eee;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			min-width: 100%;
+			min-height: 100vh;
+		}
+		/*iframe {
+			box-shadow: 0px 0px 40px rgba(0,0,0,0.05), 0px 0px 10px rgba(0,0,0,0.1), 0px 1px 1px rgba(0,0,0,0.05);
+		}*/
+		h1 {
+			position: absolute;
+			z-index: 0;
+			font-family: sans-serif;
+			font-weight: 100;
+			opacity: 0.2;
+		}
+		.ipad {
+			width: 1224px;
+			height: 890px;
+			background: url('ipad.png') no-repeat center center;
+			transform: scale(1.1271) rotate(90deg);
+			margin: 300px;
+		}
+		.device {
+			transform: rotate(-90deg);
+			height: 1024px;
+			width: 768px;
+			overflow: hidden;
+			padding-left: 301px;
+			padding-top: 157px;
+			box-sizing: content-box;
+		}
+		.ipad iframe {
+			
+		} 
+	</style>
+	<script>
+	    (function($){
+	        $(window).on("load",function(){
+	            $("iframe").mCustomScrollbar();
+	        });
+	    })(jQuery);
+	</script>
+</head>
+<body>
+	<h1>768 x 1024</h1>
+	<div class="container">
+		<div class="content">
+			
+			<div class="ipad"><div class="device"><iframe src="http://localhost/ccp/evento-super-importante/" frameborder="0" width="785" height="1024"></iframe></div></div>
+			
+		</div>
+	</div>
+</body>
+</html>

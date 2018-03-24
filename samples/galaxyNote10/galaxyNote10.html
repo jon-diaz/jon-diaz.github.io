@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Galaxy Note 10</title>
+	<style type="text/css">
+		* {
+			margin: 0;padding: 0; box-sizing: border-box;
+		}
+		body {
+			background: #eee;
+		}
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			min-height: 100vh;
+		}
+		/*iframe {
+			box-shadow: 0px 0px 40px rgba(0,0,0,0.05), 0px 0px 10px rgba(0,0,0,0.1), 0px 1px 1px rgba(0,0,0,0.05);
+		}*/
+		h1 {
+			position: absolute;
+			z-index: 0;
+			font-family: sans-serif;
+			font-weight: 100;
+			opacity: 0.2;
+		}
+		.galaxyNote10 {
+			width: 1441px;
+			height: 1016px;
+			background: url('galaxyNote10.png') no-repeat center center;
+			transform: scale(.9459);
+			margin: 20px;
+		}
+		.device {
+			width: 1280px;
+			height: 800px;
+			overflow: hidden;
+			padding-left: 80px;
+			margin-top: 108px;
+			box-sizing: content-box;
+			display: inline-block;
+		}
+		.bar {
+			height: 25px;
+			width: 100%;
+			background: url('bar.png') no-repeat right top / auto 25px;
+		}
+		.galaxyNote10 iframe {
+			
+		} 
+	</style>
+</head>
+<body>
+	<h1>1280 x 800</h1>
+	<div class="container">
+		<div class="content">
+			 <!-- width + 17px (scrollbar) /// height - 25px (menu bar) -->
+			<div class="galaxyNote10"><div class="device"><div class="bar"></div><iframe src="http://localhost/ccp/evento-super-importante/"  scrolling="no" frameborder="0" width="1280" height="775"></div></iframe></div>
+			
+		</div>
+	</div>
+</body>
+</html>
